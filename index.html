@@ -16,36 +16,48 @@
     
     <!-- # BAUSTEINE # -->
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
     <!-- bootstrap CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- bootstrap JavaScript -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     
     <!-- # EIGENE, EXTERNE RESSOURCEN # -->
     <!-- stylesheet (css), in extra datei -->
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- Javascript, in extra datei -->
-    <script src="script.js" type="text/javascript"></script>
-    <script src="game.js" type="text/javascript"></script>
+    <script src="js/visitTimeCounter.js" type="text/javascript"></script>
+    <script src="js/game.js" type="text/javascript"></script>
 
   </head>
   
 <!--
   hier der eigentliche inhalt der seite:
 -->
-<body>
+<body class="container">
   <!--  ein "h1" element mit der klasse "haupt"-->
   <h1 class="haupt">Stein-Schere-Papier</h1>
   
   <p>Wähle deinen Move:</p>
 
   <!-- Liste der Spielfiguren -->
-  <ul id="playThings">
-    <li><button class="rock">STEIN</button></li>
-    <li><button class="scissors">SCHERE</button></li>
-    <li><button class="paper">PAPER</button></li>
+  
+  <ul id="playThings" class="row">
+    <li class="btn btn-default col-xs-4">
+      <span class="rock">
+      <img data-thing="rock" class="img-responsive" src="images/rock/icon_12609.png" alt="rock">
+      </span></li>
+    <li class="btn btn-default col-xs-4">
+      <span class="scissors">
+        <img  data-thing="scissors" class="img-responsive" src="images/scissors/icon_14155.png" alt="scissors">
+      </span>
+    </li>
+    <li class="btn btn-default col-xs-4">
+      <span class="paper">
+        <img class="img-responsive" src="images/paper/icon_453.png" alt="paper">
+      </span>
+    </li>
   </ul>
   
   <div id="result">
@@ -61,6 +73,11 @@
 
   <footer>Du bist schon so viele Sekunden auf der Seite:
     <kbd id="counter">0</kbd>
+    <hr>
+    <h4>Kudos</h4>
+    <p class="digital-attribution">Rock icon designed by <a href="http://thenounproject.com/anniliese1">Anniliese Ahrens</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
+    <p class="digital-attribution">Paper icon designed by <a href="http://thenounproject.com/edward">Edward Boatman</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
+    <p class="digital-attribution">Scissors icon designed by <a href="http://thenounproject.com/furtaev/">Sergey Furtaev</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
   </footer>
 
 </body>

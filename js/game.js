@@ -1,3 +1,34 @@
+// tmp: data format experiments
+// var setup = {
+//   "things":     [ 'rock'   , 'paper' , 'scissors' ],
+//   "rules": [                                  
+//    /*rock*/     [  null    ,  false  ,  'dulls'   ],
+//    /*paper*/    [  'wraps' ,   null  ,   false    ],
+//    /*scissors*/ [  false   ,  'cuts' ,    null    ]
+//   ]
+// }
+// 
+// var setup = {
+//   "things":        [ 'hirst'           , 'beuys'   , 'warhol'               ],
+//   "rules": [                                             
+//    /*hirst*/       [  null             , 'outsells', false                  ],
+//    /*beuys*/       [  false            ,    null   , 'is more diverse than' ],
+//    /*warhol*/      [  'is more famous' ,   false   , null                   ]
+//   ]
+// }
+// 
+// var setup = {
+//   "things":     [  'rock'   ,'paper', 'scissors', 'lizard',  'spock'   ],
+//   "rules": [
+//    /*rock*/     [    null   , false ,  'dulls'  ,'crushes',   false    ],
+//    /*paper*/    [  'wraps'  ,  null ,   false   ,  false  ,'disproves' ],
+//    /*scissors*/ [   false   , 'cuts',    null   , 'stabs' ,   false    ],
+//    /*lizard*/   [   false   , 'eats',    false  ,   null  , 'poisons'  ],
+//    /*spock*/    ['vaporizes',  false, 'smashes' ,  false  ,    null    ]
+//   ]
+// }
+
+
 // ROCK/PAPER/SCISSORS game
 
 // # Data
@@ -20,6 +51,7 @@ $(document).ready(function () {
       // and get its 'class' property.
       var thing = $(e.target).prop('class');
       // Then we play the game (we call the function, its first argument is the thing we are playing this round).
+      console.log(thing)
       playGame(thing);
     });
   });

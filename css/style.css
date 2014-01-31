@@ -1,0 +1,25 @@
+/* für das spiel:*/
+
+body > * {
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+#playThings, #playThings li, #playThings li a {
+  list-style: none;
+  color: teal;
+}
+
+#result {
+  height: 7em;
+}
+
+#result, #result * {
+  font-family: monospace;
+  background-color: teal;
+}
+
+footer {
+  margin-top: 1em;
+  font-size: 0.6em;
+}
